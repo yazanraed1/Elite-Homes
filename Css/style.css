@@ -778,18 +778,18 @@ nav .navbar-brand {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-image: url(/Images/avatar-1.jpg);
+    background-image: url(../Images/avatar-1.jpg);
     background-position: center;
     background-size: cover;
 }
 .box-img-carousel-2{
-        background-image: url(/Images/avatar-2.jpg);
+        background-image: url(../Images/avatar-2.jpg);
 }
 .box-img-carousel-3{
-        background-image: url(/Images/avatar-3.jpg);
+        background-image: url(../Images/avatar-3.jpg);
 }
 .box-img-carousel-4{
-        background-image: url(/Images/avatar-4.jpg);
+        background-image: url(../Images/avatar-4.jpg);
 }
 
 
