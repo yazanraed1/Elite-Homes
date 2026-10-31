@@ -1,0 +1,155 @@
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  border: 1px solid #e2e5ee;
+  background: #f7f5ff;
+  color: #7415eb;
+  cursor: pointer;
+  transition: background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+.theme-toggle:hover { background: #ede6ff; }
+.theme-toggle:focus-visible { outline: 2px solid #a86aff; outline-offset: 3px; }
+
+html[data-bs-theme="dark"] {
+  color-scheme: dark;
+  --text-color: #f2f4fa;
+  --two-text-color: #b6c0d1;
+  --bg-button-2: #302347;
+  --bg-section-2: #111722;
+  --bs-body-bg: #111722;
+  --bs-body-color: #edf0f7;
+  --bs-secondary-bg: #202938;
+  --bs-tertiary-bg: #17202c;
+  --bs-border-color: #364256;
+  --bs-emphasis-color: #f5f7fd;
+  --bs-secondary-color: #b6c0d1;
+}
+html[data-bs-theme="dark"] body { background-color: #111722; color: #edf0f7; }
+
+/* Navbar and expanded mega menu */
+html[data-bs-theme="dark"] nav.navbar.bg-white,
+html[data-bs-theme="dark"] .mega-menu .row.bg-white { background-color: #182131 !important; }
+html[data-bs-theme="dark"] nav.navbar .navbar-brand,
+html[data-bs-theme="dark"] nav.navbar .nav-link,
+html[data-bs-theme="dark"] nav.navbar .nav-item a { color: #e9edf7; }
+html[data-bs-theme="dark"] .navbar-toggler { border-color: #4a5262; }
+html[data-bs-theme="dark"] .navbar-toggler-icon { filter: invert(1) grayscale(1); }
+html[data-bs-theme="dark"] .mega-menu .dropdown-menu,
+html[data-bs-theme="dark"] .mega-menu { color: #e9edf7; }
+html[data-bs-theme="dark"] .mega-menu .dropdown-menu div,
+html[data-bs-theme="dark"] .dropdown-menu div { color: #b6c0d1; }
+html[data-bs-theme="dark"] .dropdown-menu h4,
+html[data-bs-theme="dark"] .dropdown-menu h5 { color: #f2f4fa; }
+html[data-bs-theme="dark"] .mega-menu .bg-drop-nav *,
+html[data-bs-theme="dark"] .mega-menu .bg-drop-nav { color: #fff; }
+html[data-bs-theme="dark"] .theme-toggle { background: #28354b; color: #e7d4ff; border-color: #48526b; }
+html[data-bs-theme="dark"] .theme-toggle:hover { background: #36445f; }
+
+/* Hero: preserve the existing purple photo overlay */
+html[data-bs-theme="dark"] .search-form.bg-white { background-color: #1e2838 !important; }
+html[data-bs-theme="dark"] .search-form .form-label { color: #e5eaf3; }
+html[data-bs-theme="dark"] .search-form .form-control,
+html[data-bs-theme="dark"] .search-form .form-select {
+  background-color: #141e2c;
+  border-color: #435069;
+  color: #f2f4fa;
+}
+html[data-bs-theme="dark"] .search-form .form-control::placeholder { color: #aeb9cb; opacity: 1; }
+html[data-bs-theme="dark"] #maxSize::placeholder,
+html[data-bs-theme="dark"] #minSize::placeholder { color: #c9d1e0; }
+html[data-bs-theme="dark"] .search-form .form-control:focus,
+html[data-bs-theme="dark"] .search-form .form-select:focus { background-color: #1d2a3d; border-color: #a96dff; }
+
+/* Headings and regular content */
+html[data-bs-theme="dark"] #section-two,
+html[data-bs-theme="dark"] #services,
+html[data-bs-theme="dark"] #contact { color: #edf0f7; }
+html[data-bs-theme="dark"] .title-section p { color: #bac5d7; }
+html[data-bs-theme="dark"] .title-section .alert-dark {
+  background: #292039; color: #caa8ff; border-color: #544177;
+}
+html[data-bs-theme="dark"] .featured-title-FAQ { color: #b779ff; }
+
+/* Property cards, resources cards, and service cards */
+html[data-bs-theme="dark"] .card,
+html[data-bs-theme="dark"] .inner-bg-tab.card { background-color: #1e2838; color: #edf0f7; border-color: #354156; }
+html[data-bs-theme="dark"] .card-body { color: #bec8d8; }
+html[data-bs-theme="dark"] .card-body h5:not(.card-title-style),
+html[data-bs-theme="dark"] .card-body h4:not(.card-title-style),
+html[data-bs-theme="dark"] .inner-drop .card-title { color: #edf0f7; }
+html[data-bs-theme="dark"] .card-title-style { color: #bb86ff; }
+html[data-bs-theme="dark"] .card-body button { color: #d6b6ff; background-color: #392752; }
+html[data-bs-theme="dark"] .card-body button:hover { color: #fff; background-color: #7415eb; }
+html[data-bs-theme="dark"] #services .nav-item button { color: #c7d0df; }
+html[data-bs-theme="dark"] #services .nav-link.active { color: #e0c9ff; background-color: #38264e; }
+html[data-bs-theme="dark"] #services .text-body-secondary { color: #b6c0d1 !important; }
+html[data-bs-theme="dark"] #services .box-t.bg-white { background-color: #263247 !important; color: #edf0f7; }
+html[data-bs-theme="dark"] #services .box-t.bg-white span { color: #c2cede; }
+html[data-bs-theme="dark"] #services .img-bgInvestments { background-color: #263247; }
+html[data-bs-theme="dark"] .box-tab-2 { box-shadow: 8px 8px 30px #0c121d; }
+
+/* Testimonials: retain purple section, darken only review cards */
+html[data-bs-theme="dark"] #Testimonials .carousel-item .inner.bg-white { background-color: #202a3b !important; color: #f0f3fa; }
+html[data-bs-theme="dark"] #Testimonials .carousel-item p,
+html[data-bs-theme="dark"] #Testimonials .carousel-item span { color: #ccd4e2; }
+html[data-bs-theme="dark"] #Testimonials .carousel-item h4 { color: #fff; }
+
+/* FAQs */
+html[data-bs-theme="dark"] #FAQ { background-color: #151e2b; }
+html[data-bs-theme="dark"] #FAQ .accordion-item.bg-white,
+html[data-bs-theme="dark"] #FAQ .accordion-button,
+html[data-bs-theme="dark"] #FAQ .accordion-button:not(.collapsed),
+html[data-bs-theme="dark"] #FAQ .accordion-body { background-color: #202b3c !important; }
+html[data-bs-theme="dark"] #FAQ .accordion-item .accordion-header button { color: #edf0f7 !important; }
+html[data-bs-theme="dark"] #FAQ .accordion-body { color: #bec8d8; }
+html[data-bs-theme="dark"] #FAQ .accordion-button::after { filter: grayscale(1) invert(1); }
+
+/* Contact intro, info panels and message form */
+html[data-bs-theme="dark"] #contact .box-contact .innerr { background-color: #1e2838; border-color: #39455a; }
+html[data-bs-theme="dark"] #contact .box-contact .innerr h3,
+html[data-bs-theme="dark"] #contact .box-contact .innerr h4 { color: #f0f3fa; }
+html[data-bs-theme="dark"] .contact-information .inner:not(.box-2-infor) {
+  background-color: #202b3b; color: #eaf0fa;
+}
+html[data-bs-theme="dark"] .contact-information .inner:not(.box-2-infor) h3,
+html[data-bs-theme="dark"] .contact-information .inner:not(.box-2-infor) h4 { color: #f4f6fa; }
+html[data-bs-theme="dark"] .contact-information .icon-iineer span { color: #bac6d7; }
+html[data-bs-theme="dark"] .contact-information .icon-iineer i { background-color: #303d51; }
+/* The social panel remains purple by design. */
+html[data-bs-theme="dark"] .contact-information .box-2-infor { background-color: #8f19fc; }
+html[data-bs-theme="dark"] .contact-form .inner { background-color: #202b3b; border-color: #3c4960; }
+html[data-bs-theme="dark"] .contact-form h3,
+html[data-bs-theme="dark"] .contact-form .form-label { color: #f2f4fa; }
+html[data-bs-theme="dark"] .contact-form p,
+html[data-bs-theme="dark"] .contact-form .privacy-text { color: #bdc8d8; }
+html[data-bs-theme="dark"] .contact-form .form-control,
+html[data-bs-theme="dark"] .contact-form .form-select {
+  background-color: #172233; border-color: #48566d; color: #eef3fb; outline-color: #202b3b;
+}
+html[data-bs-theme="dark"] .contact-form .form-control::placeholder { color: #acb8ca; }
+html[data-bs-theme="dark"] .contact-form .form-control:focus,
+html[data-bs-theme="dark"] .contact-form .form-select:focus {
+  background-color: #1b293a; border-color: #a96dff; outline-color: #aa71ff;
+}
+html[data-bs-theme="dark"] .contact-form .form-check { background-color: #302744; }
+html[data-bs-theme="dark"] .contact-form .form-check-label { color: #d5dded; }
+html[data-bs-theme="dark"] .form-check-input { background-color: #243146; border-color: #78839a; }
+html[data-bs-theme="dark"] .form-check-input:checked { background-color: #8b20ff; border-color: #8b20ff; }
+html[data-bs-theme="dark"] #contact::after,
+html[data-bs-theme="dark"] #contact .circle { background-color: #27203c; }
+html[data-bs-theme="dark"] #contact::before,
+html[data-bs-theme="dark"] #contact .circle-2 { border-color: #47345f; }
+
+/* Other Bootstrap light utilities only in dark theme; keep deliberate white text and purple sections */
+html[data-bs-theme="dark"] #section-two .bg-white,
+html[data-bs-theme="dark"] #services .bg-white { background-color: #263247 !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle { transition: none; }
+}
