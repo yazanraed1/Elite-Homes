@@ -1,5 +1,4 @@
 
-
 :root {
     --main-color : #7415EB ;
     --text-color : #101828 ;
@@ -35,13 +34,13 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 125vh;
 
 }
 
 header .hero{
     background-color: #7515eb98;
-        min-height: 100vh;
+    min-height: 125vh;
     
 }
 
@@ -1128,8 +1127,8 @@ nav .navbar-brand {
 
 .circle{
     position: absolute;
-        bottom: -120px;
-        left: -105px;
+        bottom: -130px;
+        left: -130px;
         width: 330px;
         height: 330px;
         border-radius: 50%;
@@ -1138,8 +1137,8 @@ nav .navbar-brand {
 }
 .circle-2{
     position: absolute;
-        bottom: 70px;
-        left: 150px;
+        bottom: 60px;
+        left: 140px;
         width: 110px;
         height: 110px;
         border-radius: 50%;
